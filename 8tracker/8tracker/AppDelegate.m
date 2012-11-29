@@ -7,17 +7,32 @@
 //
 
 #import "AppDelegate.h"
-#import "ASIHTTPRequest.h"
+#import "RESTRequest.h"
 #import "JSONKit.h"
 
-NSString const *DEV_API_KEY = @"f1e67442912eb872696b65a2cdaf4fbd0ac1e9d7";
 NSString const *BASE_URL = @"http://8tracks.com";
+NSString const *TEST_LOGIN = @"8trackstest1";
+NSString const *TEST_PASSWORD = @"8TracksTest";
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    __block NSString *userToken = @"";
+    [RESTRequest makeRequestWithURL:@"https://8tracks.com"
+                               path:@"/sessions"
+                        requestType:@"POST"
+                         parameters:[NSDictionary dictionaryWithObjectsAndKeys:
+                                     TEST_LOGIN, @"login",
+                                     TEST_PASSWORD, @"password",
+                                     nil]
+                       successBlock:^(NSMutableDictionary *loginData){
+                           NSDictionary *userData = [loginData objectForKey:@"user"];
+                           userToken = [userData objectForKey:@"user_token"];
+                       }failureBlock:^(NSError *error){
+                           NSInteger x = 2;
+                           x = 3;
+                       }];
 }
 
 @end
