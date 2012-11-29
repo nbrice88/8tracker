@@ -24,6 +24,8 @@
 		0110D1A9166763AA00DA0D78 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1A1166763AA00DA0D78 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0110D1AA166763AA00DA0D78 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1A3166763AA00DA0D78 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0110D1B1166766A000DA0D78 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1AF166766A000DA0D78 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0110D1B81667700700DA0D78 /* RESTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1B71667700700DA0D78 /* RESTRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,10 @@
 		0110D1AD166766A000DA0D78 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Classes/3rdParty/ASIHTTPRequest/ASICacheDelegate.h; sourceTree = "<group>"; };
 		0110D1AE166766A000DA0D78 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = Classes/3rdParty/ASIHTTPRequest/ASIDataCompressor.h; sourceTree = "<group>"; };
 		0110D1AF166766A000DA0D78 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = Classes/3rdParty/ASIHTTPRequest/ASIDataCompressor.m; sourceTree = "<group>"; };
+		0110D1B61667700700DA0D78 /* RESTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RESTRequest.h; path = Classes/RESTRequest/RESTRequest.h; sourceTree = "<group>"; };
+		0110D1B71667700700DA0D78 /* RESTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTRequest.m; path = Classes/RESTRequest/RESTRequest.m; sourceTree = "<group>"; };
+		0110D1BA166773BF00DA0D78 /* NSData+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+JSONString.h"; path = "Classes/Categories/NSData+JSONString.h"; sourceTree = "<group>"; };
+		0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+JSONString.m"; path = "Classes/Categories/NSData+JSONString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,8 @@
 		0110D187166761BC00DA0D78 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0110D1B9166773B200DA0D78 /* Categories */,
+				0110D1B516676FED00DA0D78 /* RESTRequest */,
 				0110D18F166762B900DA0D78 /* ASIHTTPRequest */,
 				0110D188166761C200DA0D78 /* 3rd Party */,
 			);
@@ -184,6 +192,24 @@
 				0110D1A4166763AA00DA0D78 /* ASIProgressDelegate.h */,
 			);
 			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		0110D1B516676FED00DA0D78 /* RESTRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0110D1B61667700700DA0D78 /* RESTRequest.h */,
+				0110D1B71667700700DA0D78 /* RESTRequest.m */,
+			);
+			name = RESTRequest;
+			sourceTree = "<group>";
+		};
+		0110D1B9166773B200DA0D78 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0110D1BA166773BF00DA0D78 /* NSData+JSONString.h */,
+				0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +286,8 @@
 				0110D1A9166763AA00DA0D78 /* ASIInputStream.m in Sources */,
 				0110D1AA166763AA00DA0D78 /* ASINetworkQueue.m in Sources */,
 				0110D1B1166766A000DA0D78 /* ASIDataCompressor.m in Sources */,
+				0110D1B81667700700DA0D78 /* RESTRequest.m in Sources */,
+				0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
