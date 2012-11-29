@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "ASIHTTPRequest.h"
+#import "JSONKit.h"
+
+NSString const *DEV_API_KEY = @"f1e67442912eb872696b65a2cdaf4fbd0ac1e9d7";
+NSString const *BASE_URL = @"http://8tracks.com";
 
 @implementation AppDelegate
 
