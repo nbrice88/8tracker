@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RESTRequest.h"
 #import "JSONKit.h"
+#import "User.h"
 
 NSString const *BASE_URL = @"http://8tracks.com";
 NSString const *TEST_LOGIN = @"8trackstest1";
@@ -28,7 +29,12 @@ NSString const *TEST_PASSWORD = @"8TracksTest";
                                      nil]
                        successBlock:^(NSMutableDictionary *loginData){
                            NSDictionary *userData = [loginData objectForKey:@"user"];
-                           userToken = [userData objectForKey:@"user_token"];
+                           User *currentUser = [[User alloc] init];
+                           currentUser.username = [userData objectForKey:@"login"];
+                           currentUser.userID = [[userData objectForKey:@"id"] unsignedIntegerValue];
+                           currentUser.userToken = [userData objectForKey:@"user_token"];
+                           
+                           userToken = currentUser.userToken;
                        }failureBlock:^(NSError *error){
                            NSInteger x = 2;
                            x = 3;
