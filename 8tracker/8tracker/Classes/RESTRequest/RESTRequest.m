@@ -174,8 +174,8 @@ NSString * DEV_API_KEY = @"f1e67442912eb872696b65a2cdaf4fbd0ac1e9d7";
             [_parameters setObject:[parameterList objectForKey:key] forKey:key];
         }
     }
-    // We always want return data in JSON
-    [_parameters setObject:@"json" forKey:@"format"];
+    // We always want data to be in JSON
+    url = [url stringByAppendingString:@"?format=json"];
     
     if ( [requestMethod isEqualToString:@"POST"] || [requestMethod isEqualToString:@"PUT"] )
     {
@@ -183,8 +183,7 @@ NSString * DEV_API_KEY = @"f1e67442912eb872696b65a2cdaf4fbd0ac1e9d7";
         {
             url = [NSString stringWithFormat:@"%@%@", urlString, pathString];
         }
-        // We always want data to be in JSON
-        url = [url stringByAppendingString:@"?format=json"];
+        
         request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:url]];
         
         //------------------------------------------
