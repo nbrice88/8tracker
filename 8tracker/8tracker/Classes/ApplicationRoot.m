@@ -7,7 +7,7 @@
 //
 
 #import "ApplicationRoot.h"
-#import "RESTRequest.h"
+#import "RequestManager.h"
 #import "GlobalDefines.h"
 
 #import "User.h"
@@ -18,26 +18,14 @@
 {
     if( self = [super init] )
     {
-        __block NSString *userToken = @"";
-        [RESTRequest makeRequestWithURL:BASE_URL_SSL
-                                   path:@"/sessions"
-                            requestType:@"POST"
-                             parameters:[NSDictionary dictionaryWithObjectsAndKeys:
-                                         TEST_LOGIN, @"login",
-                                         TEST_PASSWORD, @"password",
-                                         nil]
-                           successBlock:^(NSMutableDictionary *loginData){
-                               NSDictionary *userData = [loginData objectForKey:@"user"];
-                               User *currentUser = [[User alloc] init];
-                               currentUser.username = [userData objectForKey:@"login"];
-                               currentUser.userID = [[userData objectForKey:@"id"] unsignedIntegerValue];
-                               currentUser.userToken = [userData objectForKey:@"user_token"];
-                               
-                               userToken = currentUser.userToken;
-                           }failureBlock:^(NSError *error){
-                               NSInteger x = 2;
-                               x = 3;
-                           }];
+        [[RequestManager sharedInstance] loginWithUsername:TEST_LOGIN
+                                                  password:TEST_PASSWORD
+                                              successBlock:^(User * loggedInUser){
+                                                  _currentUser = loggedInUser;
+                                                  [RequestManager sharedInstance].currentUser = _currentUser;
+                                              }failureBlock:^(NSError * error){
+                                                  NSLog(@"Failed to login\n\t user:%@\n\t password:%@", TEST_LOGIN, TEST_PASSWORD);
+                                              }];
     }
     
     return self;

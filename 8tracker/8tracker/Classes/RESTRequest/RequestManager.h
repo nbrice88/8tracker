@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RESTRequest.h"
+
+@class User;
 
 @interface RequestManager : NSObject
+
+@property User * currentUser;
+
++ (RequestManager *) sharedInstance;
+
+// Attempts to log in with the given credentials
+- (void) loginWithUsername:(NSString *) username
+                  password:(NSString *) password
+              successBlock:(void (^)(User *)) success
+              failureBlock:(void (^)(NSError *error)) failure;
 
 @end

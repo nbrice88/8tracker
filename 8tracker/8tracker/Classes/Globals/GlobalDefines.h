@@ -15,7 +15,7 @@ enum SortOption
 }SortOption;
 
 
-NSString * const BASE_URL = @"http://8tracks.com";
-NSString * const BASE_URL_SSL = @"https://8tracks.com";
-NSString * const TEST_LOGIN = @"8trackstest1";
-NSString * const TEST_PASSWORD = @"8TracksTest";
+NSString * BASE_URL = @"http://8tracks.com";
+NSString * BASE_URL_SSL = @"https://8tracks.com";
+NSString * TEST_LOGIN = @"8trackstest1";
+NSString * TEST_PASSWORD = @"8TracksTest";

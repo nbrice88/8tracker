@@ -7,15 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "RESTRequest.h"
-#import "JSONKit.h"
-#import "User.h"
+#import "ApplicationRoot.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
+    self.applicationRoot = [[ApplicationRoot alloc] init];
 }
 
 @end
