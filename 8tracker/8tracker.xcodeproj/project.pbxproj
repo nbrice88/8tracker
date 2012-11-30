@@ -72,6 +72,7 @@
 		0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+JSONString.m"; path = "Classes/Categories/NSData+JSONString.m"; sourceTree = "<group>"; };
 		0110D1C716689F2B00DA0D78 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User/User.h; sourceTree = "<group>"; };
 		0110D1C816689F2B00DA0D78 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User/User.m; sourceTree = "<group>"; };
+		0110D1D01668BAD400DA0D78 /* GlobalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalDefines.h; path = Classes/Globals/GlobalDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				0110D1C516689EE900DA0D78 /* User */,
+				0110D1CE1668BA9C00DA0D78 /* Globals */,
 				0110D1B9166773B200DA0D78 /* Categories */,
 				0110D1B516676FED00DA0D78 /* RESTRequest */,
 				0110D18F166762B900DA0D78 /* ASIHTTPRequest */,
@@ -223,6 +225,14 @@
 				0110D1C816689F2B00DA0D78 /* User.m */,
 			);
 			name = User;
+            sourceTree = "<group>";
+        };
+		0110D1CE1668BA9C00DA0D78 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				0110D1D01668BAD400DA0D78 /* GlobalDefines.h */,
+			);
+			name = Globals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
