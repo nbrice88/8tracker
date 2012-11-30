@@ -28,6 +28,7 @@
 		0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */; };
 		0110D1C916689F2B00DA0D78 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1C816689F2B00DA0D78 /* User.m */; };
 		0110D1F01668BE3500DA0D78 /* ApplicationRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1EF1668BE3500DA0D78 /* ApplicationRoot.m */; };
+		0110D1FC1668C69E00DA0D78 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1FB1668C69E00DA0D78 /* RequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		0110D1D01668BAD400DA0D78 /* GlobalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalDefines.h; path = Classes/Globals/GlobalDefines.h; sourceTree = "<group>"; };
 		0110D1EE1668BE3500DA0D78 /* ApplicationRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationRoot.h; path = Classes/ApplicationRoot.h; sourceTree = "<group>"; };
 		0110D1EF1668BE3500DA0D78 /* ApplicationRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationRoot.m; path = Classes/ApplicationRoot.m; sourceTree = "<group>"; };
+		0110D1FA1668C69E00DA0D78 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestManager.h; path = Classes/RESTRequest/RequestManager.h; sourceTree = "<group>"; };
+		0110D1FB1668C69E00DA0D78 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestManager.m; path = Classes/RESTRequest/RequestManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 			children = (
 				0110D1B61667700700DA0D78 /* RESTRequest.h */,
 				0110D1B71667700700DA0D78 /* RESTRequest.m */,
+				0110D1FA1668C69E00DA0D78 /* RequestManager.h */,
+				0110D1FB1668C69E00DA0D78 /* RequestManager.m */,
 			);
 			name = RESTRequest;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */,
 				0110D1C916689F2B00DA0D78 /* User.m in Sources */,
 				0110D1F01668BE3500DA0D78 /* ApplicationRoot.m in Sources */,
+				0110D1FC1668C69E00DA0D78 /* RequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
