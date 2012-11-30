@@ -132,9 +132,9 @@
 		0110D170166755D800DA0D78 /* 8tracker */ = {
 			isa = PBXGroup;
 			children = (
-				0110D187166761BC00DA0D78 /* Classes */,
 				0110D17C166755D800DA0D78 /* AppDelegate.h */,
 				0110D17D166755D800DA0D78 /* AppDelegate.m */,
+				0110D187166761BC00DA0D78 /* Classes */,
 				0110D17F166755D800DA0D78 /* MainMenu.xib */,
 				0110D171166755D800DA0D78 /* Supporting Files */,
 			);
@@ -225,8 +225,8 @@
 				0110D1C816689F2B00DA0D78 /* User.m */,
 			);
 			name = User;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
 		0110D1CE1668BA9C00DA0D78 /* Globals */ = {
 			isa = PBXGroup;
 			children = (
