@@ -26,6 +26,7 @@
 		0110D1B1166766A000DA0D78 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1AF166766A000DA0D78 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0110D1B81667700700DA0D78 /* RESTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1B71667700700DA0D78 /* RESTRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */; };
+		0110D1C916689F2B00DA0D78 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1C816689F2B00DA0D78 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		0110D1B71667700700DA0D78 /* RESTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTRequest.m; path = Classes/RESTRequest/RESTRequest.m; sourceTree = "<group>"; };
 		0110D1BA166773BF00DA0D78 /* NSData+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+JSONString.h"; path = "Classes/Categories/NSData+JSONString.h"; sourceTree = "<group>"; };
 		0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+JSONString.m"; path = "Classes/Categories/NSData+JSONString.m"; sourceTree = "<group>"; };
+		0110D1C716689F2B00DA0D78 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User/User.h; sourceTree = "<group>"; };
+		0110D1C816689F2B00DA0D78 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User/User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,7 @@
 		0110D187166761BC00DA0D78 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0110D1C516689EE900DA0D78 /* User */,
 				0110D1B9166773B200DA0D78 /* Categories */,
 				0110D1B516676FED00DA0D78 /* RESTRequest */,
 				0110D18F166762B900DA0D78 /* ASIHTTPRequest */,
@@ -210,6 +214,15 @@
 				0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		0110D1C516689EE900DA0D78 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0110D1C716689F2B00DA0D78 /* User.h */,
+				0110D1C816689F2B00DA0D78 /* User.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 				0110D1B1166766A000DA0D78 /* ASIDataCompressor.m in Sources */,
 				0110D1B81667700700DA0D78 /* RESTRequest.m in Sources */,
 				0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */,
+				0110D1C916689F2B00DA0D78 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +431,7 @@
 				0110D186166755D800DA0D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
