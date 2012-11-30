@@ -13,3 +13,9 @@ enum SortOption
     kSortHot,
     kSortOptionsTotal,
 }SortOption;
+
+
+NSString * const BASE_URL = @"http://8tracks.com";
+NSString * const BASE_URL_SSL = @"https://8tracks.com";
+NSString * const TEST_LOGIN = @"8trackstest1";
+NSString * const TEST_PASSWORD = @"8TracksTest";

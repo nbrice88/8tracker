@@ -27,6 +27,7 @@
 		0110D1B81667700700DA0D78 /* RESTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1B71667700700DA0D78 /* RESTRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1BB166773BF00DA0D78 /* NSData+JSONString.m */; };
 		0110D1C916689F2B00DA0D78 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1C816689F2B00DA0D78 /* User.m */; };
+		0110D1F01668BE3500DA0D78 /* ApplicationRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110D1EF1668BE3500DA0D78 /* ApplicationRoot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		0110D1C716689F2B00DA0D78 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User/User.h; sourceTree = "<group>"; };
 		0110D1C816689F2B00DA0D78 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User/User.m; sourceTree = "<group>"; };
 		0110D1D01668BAD400DA0D78 /* GlobalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalDefines.h; path = Classes/Globals/GlobalDefines.h; sourceTree = "<group>"; };
+		0110D1EE1668BE3500DA0D78 /* ApplicationRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationRoot.h; path = Classes/ApplicationRoot.h; sourceTree = "<group>"; };
+		0110D1EF1668BE3500DA0D78 /* ApplicationRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationRoot.m; path = Classes/ApplicationRoot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				0110D1B516676FED00DA0D78 /* RESTRequest */,
 				0110D18F166762B900DA0D78 /* ASIHTTPRequest */,
 				0110D188166761C200DA0D78 /* 3rd Party */,
+				0110D1EE1668BE3500DA0D78 /* ApplicationRoot.h */,
+				0110D1EF1668BE3500DA0D78 /* ApplicationRoot.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				0110D1B81667700700DA0D78 /* RESTRequest.m in Sources */,
 				0110D1BC166773BF00DA0D78 /* NSData+JSONString.m in Sources */,
 				0110D1C916689F2B00DA0D78 /* User.m in Sources */,
+				0110D1F01668BE3500DA0D78 /* ApplicationRoot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
